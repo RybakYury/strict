@@ -226,7 +226,8 @@ a.boot:hover:before, a.boot:active:before, a.boot:focus:before {
 }
 
 .scils_icon img {
-    max-width: 100%;
+	 max-width: 100%;
+	 margin-top: 10px;
 }
 
 .scils_icon:hover {
