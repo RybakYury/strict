@@ -419,7 +419,9 @@ form {
     padding: 10px;
     margin-bottom: 30px;
     overflow: hidden;
-    color: #999;
+	 color: #999;
+	 max-width: 557px;
+	 max-height: 260px;
 }
 
 /* Базовые стили кнопки */
@@ -556,7 +558,7 @@ footer {
 /*B&W*/
 
 .show_foto-item {
-    filter: grayscale(80%);
+	 filter: grayscale(80%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -565,7 +567,11 @@ footer {
 }
 
 .show_foto-item:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(0);
+	 -webkit-filter: grayscale(100%);
+    /*filter: grayscale(0);*/
 }
+.show_foto-item img:hover {
+	cursor: zoom-in;
+}
+
 

@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<link rel="shortcut icon" href="img/Logo_ico.png">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/simplebox.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/wow.min.js"></script>
+	<script src="js/simplebox.js"></script>
+	<script src="js/simplebox_util.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/js.js"></script>
+
 </head>
 
 <body>
@@ -80,23 +85,23 @@
 				</div>
 				<div class="show_foto-all">
 					<div class="show_foto-item wow jello" data-wow-offset="180">
-						<a href="#"><img src="img/image_1.jpg" alt=""></a>
+						<a rel="simplebox" href="imgs/image_11.jpg"><img src="imgs/image_1.jpg" alt=""></a>
 					</div>
 					<div class="show_foto-item wow jello" data-wow-offset="180">
-						<a href="#"> <img src="img/image_2.jpg" alt=""></a>
+						<a rel="simplebox" href="imgs/image_22.jpg"><img src="imgs/image_2.jpg" alt=""></a>
 					</div>
 					<div class="show_foto-item wow jello" data-wow-offset="180">
-						<a href="#"><img src="img/image_3.jpg" alt=""></a>
+						<a rel="simplebox" href="imgs/image_33.jpg"><img src="imgs/image_3.jpg" alt=""></a>
 					</div>
 
 					<div class="show_foto-item wow jello" data-wow-offset="180">
-						<a href="#"><img src="img/image_4.jpg" alt=""></a>
+						<a rel="simplebox" href="imgs/image_44.jpg"><img src="imgs/image_4.jpg" alt=""></a>
 					</div>
 					<div class="show_foto-item wow jello" data-wow-offset="180">
-						<a href="#"><img src="img/image_5.jpg" alt=""></a>
+						<a rel="simplebox" href="imgs/image_55.jpg"><img src="imgs/image_5.jpg" alt=""></a>
 					</div>
 					<div class="show_foto-item wow jello" data-wow-offset="180">
-						<a href="#"><img src="img/image_6.jpg" alt=""></a>
+						<a rel="simplebox" href="imgs/image_66.jpg"><img src="imgs/image_6.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -130,16 +135,16 @@
 		<footer>
 			<div class="content">
 				<div class="footer-all wow fadeInUp">
-					<div class="copyrith_text">Copyritht 2014, STRICT</div>
+					<div class="copyrith_text">Copyritht 2020, STRICT</div>
 					<div class="copyrith_items">
 						<div class="copyrith_item">
-							<a href="#"><img src="img/icon/facebook.png" alt=""></a></div>
+							<a href="https://facebook.com"><img src="img/icon/facebook.png" alt=""></a></div>
 						<div class="copyrith_item">
-							<a href="#"><img src="img/icon/twitter.png" alt=""></a></div>
+							<a href="https://twitter.com"><img src="img/icon/twitter.png" alt=""></a></div>
 						<div class="copyrith_item">
-							<a href="#"><img src="img/icon/google.png" alt=""></a></div>
+							<a href="https://google.com"><img src="img/icon/google.png" alt=""></a></div>
 						<div class="copyrith_item">
-							<a href="#"><img src="img/icon/linked.png" alt=""></a></div>
+							<a href="https://linkedin.com"><img src="img/icon/linked.png" alt=""></a></div>
 					</div>
 				</div>
 			</div>
@@ -148,6 +153,21 @@
 	<script>
 		new WOW().init();
 	</script>
+	<script type="text/javascript" src="js/simplebox_util.js"></script>
+	<script type="text/javascript">
+	(function(){
+	var boxes=[],els,i,l;
+	if(document.querySelectorAll){
+	els=document.querySelectorAll('a[rel=simplebox]');	
+	Box.getStyles('css/simplebox_css','css/simplebox.css');
+	Box.getScripts('js/simplebox_js','js/simplebox.js',function(){
+	simplebox.init();
+	for(i=0,l=els.length;i<l;++i)
+	simplebox.start(els[i]);
+	simplebox.start('a[rel=simplebox_group]');			
+	});
+	}
+	})();</script>
 </body>
 
 </html>
