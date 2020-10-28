@@ -13,8 +13,9 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/simplebox.js"></script>
 	<script src="js/simplebox_util.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/js.js"></script>
+	<script src="js/main.js"></script>
 
 </head>
 
@@ -114,6 +115,11 @@
 				</div>
 				<div class="stay_form">
 					<form>
+								<!-- Hidden Required Fields -->
+									<input type="hidden" name="project_name" value="Strict">
+									<input type="hidden" name="admin_email" value="ribak303@mail.com">
+									<input type="hidden" name="form_subject" value="Form support on Strict">
+								<!-- END Hidden Required Fields -->
 						<input name="name" placeholder="Full Name" class="textbox wow fadeInLeft" data-wow-offset="120"
 							data-wow-delay="0" required />
 						<input name="emailaddress" placeholder="Email Address" class="textbox wow fadeInLeft"
@@ -126,6 +132,7 @@
 								<input name="check" placeholder="checkbox" class="checkbox" type="checkbox" required />
 								<p> Subscribe Newsletter</p>
 							</div>
+							<button>Send</button>
 							<input name="submit" class="button" type="submit" value="Send" />
 						</div>
 					</form>
