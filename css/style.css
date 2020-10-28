@@ -398,7 +398,7 @@ form {
 
 .message:focus, .textbox:focus {
     outline: none;
-    border: rgb(230, 230, 230) 2px solid;
+    border: rgb(185, 185, 185) 2px solid;
     color: rgb(160, 160, 160);
 }
 
@@ -407,7 +407,8 @@ form {
 .message {
     background: none;
     width: 100%;
-    height: 163px;
+	 min-height: 163px;
+	 max-height: 260px;
     border: rgba(255, 255, 255, 0.3) 2px solid;
     box-sizing: border-box;
     -moz-border-radius: 3px;
@@ -420,8 +421,8 @@ form {
     margin-bottom: 30px;
     overflow: hidden;
 	 color: #999;
-	 max-width: 557px;
-	 max-height: 260px;
+	 resize: vertical;
+	 
 }
 
 /* Базовые стили кнопки */
